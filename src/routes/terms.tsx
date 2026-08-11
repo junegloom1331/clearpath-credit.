@@ -18,6 +18,7 @@ function Terms() {
         <a href="/" className="brand"><span className="brand-mark">✳</span> CLEARPATH <i>CREDIT</i></a>
         <div className="nav-links">
           <a href="/dispute-letter">Letter builder</a>
+          <a href="/data-broker-removal">Removal toolkit</a>
           <a href="/#pricing">The tool</a>
           <a className="nav-cta" href="/#start">Get on the list <span>↗</span></a>
         </div>

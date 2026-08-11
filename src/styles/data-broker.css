@@ -1,0 +1,122 @@
+/* ── Data-broker removal toolkit — extends the ClearPath editorial system ── */
+.dtool{min-height:100vh}
+.dtool-head{padding:90px 11vw 50px;max-width:900px}
+.dtool-head h1{font-size:clamp(4rem,8vw,8rem);margin-bottom:25px}
+.dtool-head>p:last-child{font:24px Fraunces;line-height:1.25;max-width:620px;color:#48534d}
+.compliance{margin:0 11vw 60px;padding:20px 24px;border-left:4px solid var(--saffron);background:#e8e3d8;max-width:900px;font-size:12px}
+.compliance strong{display:block;color:var(--clay);font-size:10px;letter-spacing:.12em;margin-bottom:5px}
+.compliance a{color:var(--clay);text-decoration:underline;text-underline-offset:3px}
+.compliance a:hover{color:var(--ink)}
+
+/* ── 01 Explainer ── */
+.explain{padding:95px 11vw;border-top:1px solid var(--line);background:#e8e3d8}
+.explain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:44px}
+.explain-card .ec-no{font:11px 'DM Mono';color:var(--clay);letter-spacing:.14em;display:block;margin-bottom:18px}
+.explain-card h3{font-size:26px;margin:0 0 12px}
+.explain-card p{font-size:12px;line-height:1.75;color:#3c4640;margin:0}
+.explain-card p+p{margin-top:10px}
+.ca-box{margin-top:70px;background:var(--ink);color:var(--paper);padding:40px 44px;display:grid;grid-template-columns:1.1fr 1.9fr;gap:40px;align-items:start}
+.ca-box .law-mark{font:110px Fraunces;line-height:.7;color:var(--saffron)}
+.ca-box h3{font-size:30px;margin:0 0 14px}
+.ca-box p{font-size:12px;line-height:1.75;color:#c9d2ca;max-width:640px;margin:0 0 12px}
+.ca-box ul{margin:0;padding-left:18px;font-size:12px;line-height:1.8;color:#c9d2ca}
+.ca-box li strong{color:var(--paper)}
+.ca-box .ca-note{margin-top:16px;font-size:10px;color:#aeb9ae;border-top:1px solid #3c4640;padding-top:14px}
+
+/* ── 02 Directory + tracker ── */
+.directory{padding:95px 11vw 70px;border-top:1px solid var(--line)}
+.directory-intro{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:30px}
+.directory-intro p:last-child{font-size:12px;line-height:1.75;color:#55605a;max-width:480px;margin:0}
+.track-bar{display:flex;align-items:center;gap:22px;border:1px solid var(--ink);padding:16px 20px;margin:0 0 34px;background:var(--paper)}
+.track-bar b{font:22px Fraunces;white-space:nowrap}
+.track-bar .track-hint{font-size:10px;color:#55605a;margin:0 0 0 auto;max-width:340px;text-align:right}
+.track-progress{flex:1;height:8px;background:#d9d4c8;position:relative}
+.track-progress span{position:absolute;inset:0 auto 0 0;background:var(--clay)}
+.track-progress span.done-all{background:var(--saffron)}
+.broker-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.broker-row{display:grid;grid-template-columns:34px 1fr 130px 200px;gap:18px;padding:22px 8px;border-bottom:1px solid var(--line);align-items:start}
+.broker-check{display:flex;align-items:flex-start;padding-top:3px}
+.broker-check input{width:20px;height:20px;accent-color:var(--clay);cursor:pointer}
+.broker-main h3{font-size:22px;margin:0 0 6px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.broker-main .bver{font:9px 'DM Mono';letter-spacing:.1em;color:#55605a;border:1px solid #9aa39b;padding:3px 7px;white-space:nowrap}
+.broker-main .bver-ok{color:#2e5c3f;border-color:#2e5c3f}
+.broker-main .bver-no{color:#7a250f;border-color:#7a250f}
+.broker-main p{font-size:12px;line-height:1.7;color:#3c4640;margin:0 0 8px;max-width:520px}
+.broker-main .bnotes{font-size:10px;line-height:1.65;color:#55605a;max-width:520px;margin:0;border-left:2px solid var(--saffron);padding-left:10px}
+.broker-diff{justify-self:start;font:10px 'DM Mono';letter-spacing:.08em;border:1px solid var(--ink);padding:5px 10px;text-align:center;white-space:nowrap}
+.broker-date{display:flex;flex-direction:column;gap:6px}
+.broker-date label{font:9px 'DM Mono';letter-spacing:.1em;color:#55605a}
+.broker-date input{font:12px 'DM Mono';border:1px solid #8e988d;background:var(--paper);padding:7px 8px;color:var(--ink)}
+.broker-date input:focus{border-color:var(--ink);outline:2px solid var(--ink);outline-offset:2px}
+.broker-link{font:11px 'DM Mono';color:var(--clay);text-decoration:underline;text-underline-offset:3px;word-break:break-all}
+.broker-link:hover{color:var(--ink)}
+.done .broker-main h3{color:#5a635c}
+.track-reset{margin:26px 0 0;background:none;border:1px solid #8e988d;color:#55605a;font:10px 'DM Mono';padding:9px 14px;cursor:pointer}
+.track-reset:hover{border-color:var(--ink);color:var(--ink)}
+
+/* ── 03 Removal log ── */
+.log-sec{padding:90px 11vw;border-top:1px solid var(--line);background:var(--mint)}
+.log-sec h2{font-size:clamp(2.8rem,4.5vw,4.5rem)}
+.log-sec>p{max-width:560px;font-size:12px;line-height:1.75;color:#3c4640}
+.log-actions{display:flex;gap:10px;margin:26px 0}
+.log-actions button{font:10px 'DM Mono';background:var(--ink);color:var(--paper);border:0;padding:11px 14px;cursor:pointer}
+.log-actions button:focus-visible{outline:2px solid var(--saffron);outline-offset:3px}
+.log-actions .log-note{font-size:10px;color:#48534d;align-self:center;margin:0}
+.log-paper{background:#fffdf8;color:#111;padding:40px 7%;box-shadow:4px 4px 0 #9aa39b;max-width:760px;font:12px/1.8 'DM Mono';white-space:pre-wrap}
+.log-paper em{color:#5a635c}
+
+/* ── 04 CCPA letter ── */
+.ccpa{padding:95px 11vw 60px;border-top:1px solid var(--line)}
+.ccpa-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:40px}
+.ccpa-head p:last-child{font-size:12px;line-height:1.75;color:#55605a;max-width:480px;margin:0}
+.ccpa-grid{display:grid;grid-template-columns:43% 57%;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ccpa-form{padding:50px 6vw 60px 0}
+.ccpa-form fieldset{border:0;border-top:1px solid var(--line);padding:26px 0 32px;margin:0}
+.ccpa-form legend{font:24px Fraunces;margin-bottom:22px;width:100%}
+.ccpa-form legend span{font:10px 'DM Mono';color:var(--clay);margin-right:18px}
+.ccpa-form label{display:block;font-size:10px;letter-spacing:.04em;margin:0 0 18px}
+.ccpa-form label small{color:#5a635c;margin-left:8px;letter-spacing:0}
+.ccpa-form input,.ccpa-form textarea{display:block;width:100%;border:1px solid #8e988d;background:var(--paper);color:var(--ink);padding:11px 12px;margin-top:6px;font:13px 'DM Mono';border-radius:0}
+.ccpa-form textarea{resize:vertical}
+.ccpa-form input:focus,.ccpa-form textarea:focus{border-color:var(--ink);outline:2px solid var(--ink);outline-offset:2px}
+.ccpa-letter{background:#e7dccc;padding:50px 6vw 70px;min-height:560px}
+.ccpa-letter .preview-top{display:flex;justify-content:space-between;align-items:start}
+.ccpa-letter .preview-actions{display:flex;gap:8px}
+.ccpa-letter .preview-actions button{font:10px 'DM Mono';background:var(--ink);color:var(--paper);border:0;padding:10px 12px;cursor:pointer}
+.ccpa-letter pre{white-space:pre-wrap;font:12px/1.75 'DM Mono';background:#fffdf8;color:#111;padding:40px 8%;margin:26px 0 0;box-shadow:4px 4px 0 #b5afa4}
+.empty-letter{padding:70px 6% 20px 0}
+.empty-letter>span{font:100px Fraunces;color:var(--saffron)}
+.empty-letter h3{font-size:3rem;margin:20px 0 10px}
+.empty-letter p{max-width:340px;color:#55605a;font-size:12px}
+
+.dtool-footer{display:flex;justify-content:space-between;padding:35px 11vw;font-size:11px;color:var(--clay);flex-wrap:wrap;gap:12px}
+.dtool-footer a:hover{color:var(--ink)}
+
+@media(max-width:800px){
+  .dtool-head{padding:65px 8vw 45px}.dtool-head>p:last-child{font-size:20px}
+  .compliance{margin:0 8vw 40px}
+  .explain{padding:70px 8vw}.explain-grid{display:block}
+  .explain-card{margin-bottom:36px}
+  .ca-box{display:block;padding:34px 28px}.ca-box .law-mark{font-size:80px;margin-bottom:30px}
+  .directory{padding:70px 8vw}
+  .directory-intro{display:block}.directory-intro p:last-child{margin-top:18px}
+  .track-bar{flex-wrap:wrap;gap:12px}.track-hint{text-align:left;margin:0}
+  .track-progress{flex-basis:100%;order:-1}
+  .broker-row{grid-template-columns:30px 1fr;gap:12px}
+  .broker-diff{grid-column:2;justify-self:start}
+  .broker-date{grid-column:2}
+  .log-sec{padding:70px 8vw}
+  .log-paper{padding:28px 6%}
+  .ccpa{padding:70px 8vw}.ccpa-head{display:block}.ccpa-head p:last-child{margin-top:16px}
+  .ccpa-grid{display:block}
+  .ccpa-form{padding:40px 0}.ccpa-letter{padding:40px 0;min-height:0}
+  .empty-letter{padding-top:30px}
+  .dtool-footer{padding:30px 8vw}
+}
+@media print{
+  body{background:#fff!important;color:#000}
+  .nav,.dtool-head,.compliance,.explain,.directory,.track-bar,.track-reset,.log-actions,.ccpa,.dtool-footer{display:none!important}
+  .log-sec{background:#fff!important;padding:0}
+  .log-sec h2,.log-sec>p,.log-sec .eyebrow{display:none}
+  .log-paper{box-shadow:none;padding:0;max-width:none;font:11pt/1.6 Georgia,serif;white-space:pre-wrap}
+}
