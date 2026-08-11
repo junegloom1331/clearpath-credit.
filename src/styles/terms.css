@@ -1,0 +1,34 @@
+/* Terms of Service — editorial layout on the paper/ink/saffron/clay system. */
+.terms{min-height:100vh}
+.terms-head{padding:90px 11vw 60px;border-bottom:1px solid var(--line);max-width:1100px}
+.terms-head h1{font-size:clamp(4rem,8vw,8rem);margin-bottom:25px}
+.terms-head>p:last-child{font:24px Fraunces;line-height:1.3;max-width:640px;color:#48534d;margin-bottom:0}
+.terms-body{padding:40px 11vw 0;max-width:1100px}
+.terms-section{display:grid;grid-template-columns:22% 78%;gap:6%;padding:70px 0;border-bottom:1px solid var(--line)}
+.terms-section:last-of-type{border-bottom:0}
+.sec-no{font-size:10px;letter-spacing:.14em;color:var(--clay);line-height:1.7}
+.sec-no span{display:block;font:44px Fraunces;color:var(--ink);margin-bottom:14px}
+.terms-prose h2{font-size:clamp(2.2rem,3.6vw,3.6rem);margin-bottom:30px}
+.terms-prose p{max-width:600px;font-size:13px;line-height:1.8;color:#3c4640;margin-bottom:20px}
+.terms-prose p:last-child{margin-bottom:0}
+.terms-prose a{color:var(--clay);text-decoration:underline;text-underline-offset:4px}
+.terms-prose a:hover{color:var(--ink)}
+.terms-prose ul{margin:0 0 20px;padding:0;list-style:none;max-width:620px}
+.terms-prose li{position:relative;padding:0 0 18px 26px;font-size:13px;line-height:1.75;color:#3c4640;border-bottom:1px dashed var(--line)}
+.terms-prose li:last-child{border-bottom:0}
+.terms-prose li::before{content:"§";position:absolute;left:0;top:0;color:var(--saffron);font-family:Fraunces,serif;font-size:15px}
+.statute-section .terms-prose>p{font-size:12px;color:#5a635c}
+.statute{background:var(--ink);color:var(--paper);margin:35px 0 0;padding:55px 60px;max-width:640px}
+.statute-title{font:10px 'DM Mono';letter-spacing:.18em;color:var(--saffron);margin-bottom:28px}
+.statute p{color:#e8e4da;font:15px/1.9 Fraunces;margin:0 0 22px;max-width:520px}
+.statute p:last-child{margin-bottom:0}
+.statute-addr{color:var(--saffron)!important}
+@media(max-width:800px){
+  .terms-head{padding:65px 8vw 45px}
+  .terms-body{padding:20px 8vw 0}
+  .terms-section{display:block;padding:50px 0}
+  .sec-no{margin-bottom:30px}
+  .sec-no span{font-size:36px}
+  .statute{padding:40px 28px}
+  .terms-prose h2{font-size:2.6rem}
+}
